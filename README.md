@@ -393,57 +393,6 @@ Run:
 npm test -- --run
 ```
 
----
-
-## 🗺️ Roadmap
-
-### Shipped
-
-- [x] Responsive PWA shell
-- [x] Safe hunt catalog
-- [x] Camera/photo flow
-- [x] Local Ollama integration
-- [x] Mission-specific vision prompts
-- [x] Structured JSON verification
-- [x] Zod response validation
-- [x] Ollama health/model detection
-- [x] Privacy and security documentation
-- [x] Automated CI checks
-
-### Next
-
-- [ ] Browser-side ONNX vision provider
-- [ ] More hunt packs
-- [ ] Better accessibility support
-- [ ] Offline-first mission packs
-- [ ] More granular local session persistence
-- [ ] Expanded contributor tooling
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome.
-
-Start with [CONTRIBUTING.md](CONTRIBUTING.md), then:
-
-```powershell
-npm install
-npm run typecheck
-npm test -- --run
-npm run build
-```
-
-Please keep contributions aligned with WildHunt's core principles:
-
-1. Local-first AI where practical.
-2. Privacy by default.
-3. Safe real-world activities.
-4. Clear, maintainable TypeScript.
-5. No unnecessary telemetry.
-
----
-
 ## 📜 License
 
 WildHunt AI is released under the **MIT License**.
