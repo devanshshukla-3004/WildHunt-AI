@@ -13,6 +13,10 @@
 
 Choose a hunt. Get a mission. Go outside. Photograph your discovery. Your own machine's vision model checks whether the image satisfies the mission — without sending the photo to a WildHunt cloud backend.
 
+<p align="center">
+  <img src="docs/media/dashboard.jpg" alt="WildHunt AI dashboard with hunt selection and local AI status" width="900">
+</p>
+
 ---
 
 ## ✦ Why WildHunt?
@@ -42,6 +46,52 @@ Next Mission
 ```
 
 The screen is only the starting point. **The real world is the game board.**
+
+---
+
+## 🎥 Product Walkthrough
+
+WildHunt is designed as a short, focused interaction: receive a safe mission, capture a real-world discovery, and let local vision AI verify it.
+
+### 01 — Receive a mission
+
+<p align="center">
+  <img src="docs/media/mission-1.jpg" alt="WildHunt nature hunt mission: find a naturally yellow flower" width="900">
+</p>
+
+Each hunt gives the player a concrete, observation-based objective with safety guidance. Missions are designed to encourage exploration rather than risky behavior.
+
+### 02 — Capture the discovery
+
+<p align="center">
+  <img src="docs/media/capture-discovery.jpg" alt="WildHunt photo capture screen" width="900">
+</p>
+
+The player can use their device camera or choose a photo. The image stays in the client until it is sent to the configured vision endpoint.
+
+### 03 — Scan the photo with local AI
+
+<p align="center">
+  <img src="docs/media/picture-scanning.jpg" alt="WildHunt scanning a captured discovery with local AI" width="900">
+</p>
+
+WildHunt sends the image to **Ollama running on the user's machine**, not to a WildHunt server.
+
+### 04 — Mission-specific AI verification
+
+<p align="center">
+  <img src="docs/media/ollama-verification.jpg" alt="WildHunt local Ollama verification screen" width="900">
+</p>
+
+The vision model is asked whether the photo satisfies **the current mission**, then returns structured evidence, an explanation, and a model-reported confidence score.
+
+### 05 — Local AI settings
+
+<p align="center">
+  <img src="docs/media/settings.jpg" alt="WildHunt local AI settings showing Ollama endpoint and vision model" width="900">
+</p>
+
+The Settings panel makes the local inference setup transparent: endpoint, active vision model, connection status, and the command needed to install the model.
 
 ---
 
@@ -292,6 +342,13 @@ WildHunt-AI/
 ├── .github/
 │   └── workflows/
 ├── docs/
+│   ├── media/
+│   │   ├── dashboard.jpg
+│   │   ├── mission-1.jpg
+│   │   ├── capture-discovery.jpg
+│   │   ├── picture-scanning.jpg
+│   │   ├── ollama-verification.jpg
+│   │   └── settings.jpg
 │   ├── ai.md
 │   ├── architecture.md
 │   ├── privacy.md
