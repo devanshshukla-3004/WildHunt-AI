@@ -1,0 +1,12 @@
+import type { HuntTarget } from "../types";
+
+export const targets: HuntTarget[] = [
+  { id: "yellow-flower", title: "Find a naturally yellow flower", prompt: "A naturally yellow flower growing outdoors. The flower should be clearly visible and not a manufactured object.", category: "Nature", difficulty: "Easy", safety: ["Stay on safe paths", "Do not pick plants"] },
+  { id: "unusual-bark", title: "Find unusual tree bark", prompt: "A living tree with visibly unusual, textured, patterned, or distinctive bark.", category: "Nature", difficulty: "Medium", safety: ["Do not climb trees", "Stay away from traffic"] },
+  { id: "interesting-stone", title: "Find an interesting stone", prompt: "A naturally occurring stone or rock with a distinctive color, shape, pattern, or texture.", category: "Texture", difficulty: "Easy", safety: ["Look without entering unsafe areas", "Do not disturb protected sites"] },
+  { id: "street-art", title: "Find outdoor artwork", prompt: "A clearly visible piece of outdoor public art, mural, sculpture, or legal street artwork.", category: "Urban Explorer", difficulty: "Easy", safety: ["Stay on public paths", "Do not enter private property"] },
+  { id: "walk-past-detail", title: "Notice something you normally walk past", prompt: "A small but interesting outdoor detail that people might normally overlook, such as a distinctive architectural or natural feature.", category: "Observation", difficulty: "Medium", safety: ["Do not photograph private interiors", "Stay aware of surroundings"] },
+  { id: "natural-red", title: "Find something naturally red", prompt: "A naturally occurring red object or feature outdoors, such as a flower, leaf, fruit on a plant, or mineral surface.", category: "Colors", difficulty: "Easy", safety: ["Do not eat or touch unknown plants", "Stay on safe paths"] },
+  { id: "pattern-texture", title: "Find a repeating natural pattern", prompt: "A visible repeating pattern in a natural outdoor subject, such as leaves, bark, petals, or a rock surface.", category: "Texture", difficulty: "Medium", safety: ["Observe without touching wildlife", "Stay on safe paths"] },
+  { id: "landmark-detail", title: "Find a public landmark detail", prompt: "A recognizable architectural detail belonging to a public landmark or civic structure.", category: "Landmark Hunt", difficulty: "Hard", safety: ["Remain in public areas", "Do not cross barriers"] },
+];

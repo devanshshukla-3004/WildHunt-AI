@@ -1,0 +1,10 @@
+{
+  "name": "WildHunt AI",
+  "short_name": "WildHunt",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121813",
+  "theme_color": "#18251c",
+  "description": "Privacy-first outdoor scavenger hunts powered by local open-weight vision AI.",
+  "icons": [{"src":"/icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
